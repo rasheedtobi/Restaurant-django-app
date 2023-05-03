@@ -24,8 +24,6 @@ def book(request):
     return render(request, 'book.html', context)
 
 
-
-
 def menu(request):
     # Retrieve all objects from the Menu model
     menu_data = Menu.objects.all()
@@ -37,7 +35,7 @@ def menu(request):
     }
 
     # Render a template with the menu_data and main_data variables
-    # return render(request, '', {'menu_data': menu_data, 'main_data': main_data})
+
     return render(request, 'menu.html', main_data)
 
 
